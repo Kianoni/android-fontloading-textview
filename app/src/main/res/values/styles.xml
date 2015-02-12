@@ -1,8 +1,18 @@
-<resources>
+<resources xmlns:font="http://schemas.android.com/res/com.elisa.wallet">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="OpenSans">
+        <item name="fontFilePattern">fonts/{fontFamily}-{fontVariant}.ttf</item>
+        <item name="fontFamily">OpenSans</item>
+        <item name="fontVariant">Regular</item>
+    </style>
+
+    <style name="OpenSans.Bold" parent="OpenSans">
+        <item name="fontVariant">Bold</item>
     </style>
 
 </resources>

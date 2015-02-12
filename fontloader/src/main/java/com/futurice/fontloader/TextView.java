@@ -35,6 +35,9 @@ public class TextView extends android.widget.TextView {
         TypedArray styledAttributes = context.obtainStyledAttributes(attrs, R.styleable.TextView);
 
         String fontFile = null;
+        String fontFamily = null;
+        String fontVariant = null;
+        String fontFilePattern = null;
 
         final int N = styledAttributes.getIndexCount();
         for (int i = 0; i < N; ++i) {
@@ -42,12 +45,25 @@ public class TextView extends android.widget.TextView {
             if (R.styleable.TextView_fontFile == attr) {
                 fontFile = styledAttributes.getString(attr);
             }
+            if (R.styleable.TextView_fontFamily == attr) {
+                fontFamily = styledAttributes.getString(attr);
+            }
+            if (R.styleable.TextView_fontVariant == attr) {
+                fontVariant = styledAttributes.getString(attr);
+            }
+            if (R.styleable.TextView_fontFilePattern == attr) {
+                fontFilePattern = styledAttributes.getString(attr);
+            }
         }
 
         styledAttributes.recycle();
 
+        if (fontFamily != null && fontVariant != null && fontFilePattern != null) {
+            this.setTypeface(FontLoader.getInstance().getTypeFace(context, fontFamily, fontVariant, fontFilePattern));
+        }
+
         if (fontFile != null) {
-            this.setTypeface(FontLoader.getInstance().getTypeFace(context,fontFile));
+            this.setTypeface(FontLoader.getInstance().getTypeFace(context, fontFile));
         }
 
     }

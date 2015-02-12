@@ -5,6 +5,7 @@ import android.graphics.Typeface;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 /**
  * Created by kilp on 08/02/15.
@@ -29,5 +30,10 @@ public class FontLoader {
             typefaceByFilename.put(fontFile, typeface);
         }
         return typeface;
+    }
+
+    public Typeface getTypeFace(Context context, String fontFamily, String fontVariant, String fontFilePattern) {
+        String fontFilename = fontFilePattern.replace("{fontFamily}", fontFamily).replace("{fontVariant}", fontVariant);
+        return getTypeFace(context, fontFilename);
     }
 }
