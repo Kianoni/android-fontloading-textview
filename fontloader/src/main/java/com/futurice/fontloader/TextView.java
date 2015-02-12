@@ -59,6 +59,9 @@ public class TextView extends android.widget.TextView {
         styledAttributes.recycle();
 
         if (fontFamily != null && fontVariant != null && fontFilePattern != null) {
+            if (fontFile != null) {
+                throw new RuntimeException("Attempting to set fontFile together with fontFilePattern");
+            }
             this.setTypeface(FontLoader.getInstance().getTypeFace(context, fontFamily, fontVariant, fontFilePattern));
         }
 

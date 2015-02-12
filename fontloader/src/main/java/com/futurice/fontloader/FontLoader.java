@@ -25,9 +25,12 @@ public class FontLoader {
     public Typeface getTypeFace(Context context, String fontFile) {
         Typeface typeface = typefaceByFilename.get(fontFile);
         if (typeface == null) {
-            // todo: error handling
-            typeface = Typeface.createFromAsset(context.getAssets(), fontFile);
-            typefaceByFilename.put(fontFile, typeface);
+            try {
+                typeface = Typeface.createFromAsset(context.getAssets(), fontFile);
+                typefaceByFilename.put(fontFile, typeface);
+            } catch (RuntimeException e) {
+                throw new RuntimeException("Error loading font", e);
+            }
         }
         return typeface;
     }
