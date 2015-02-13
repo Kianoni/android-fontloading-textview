@@ -1,11 +1,10 @@
-package com.futurice.fontloader;
+package net.kianoni.fontloader;
 
 import android.content.Context;
 import android.graphics.Typeface;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.regex.Pattern;
 
 /**
  * Created by kilp on 08/02/15.

@@ -1,4 +1,4 @@
-package com.futurice.fontloader;
+package net.kianoni.fontloader;
 
 import android.annotation.TargetApi;
 import android.content.Context;

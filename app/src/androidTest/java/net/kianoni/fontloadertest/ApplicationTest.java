@@ -1,4 +1,4 @@
-package com.futurice.fontloadertest;
+package net.kianoni.fontloadertest;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

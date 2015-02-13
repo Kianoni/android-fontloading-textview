@@ -1,4 +1,4 @@
-package com.futurice.fontloadertest;
+package net.kianoni.fontloadertest;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;

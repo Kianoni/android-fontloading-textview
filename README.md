@@ -13,7 +13,7 @@ Add font namespace to xml root element, eg.
 
 Define explicit font file to use:
 
-    <com.futurice.fontloader.TextView
+    <net.kianoni.fontloader.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
@@ -23,7 +23,7 @@ Define explicit font file to use:
 
 Or a pattern, family and variant:
 
-    <com.futurice.fontloader.TextView
+    <net.kianoni.fontloader.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
@@ -37,7 +37,7 @@ Or a pattern, family and variant:
 
 Example:
 
-    <resources xmlns:font="http://schemas.android.com/res/com.futurice.fontloader">
+    <resources xmlns:font="http://schemas.android.com/res/net.kianoni.fontloader">
 
         <!-- Base application theme. -->
         <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -59,14 +59,14 @@ Example:
 
 and usage in layouts:
 
-    <com.futurice.fontloader.TextView
+    <net.kianoni.fontloader.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
         style="@style/OpenSans"
         />
 
-    <com.futurice.fontloader.TextView
+    <net.kianoni.fontloader.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"

@@ -1,4 +1,4 @@
-<resources xmlns:font="http://schemas.android.com/res/com.futurice.fontloader">
+<resources xmlns:font="http://schemas.android.com/res/net.kianoni.fontloader">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">

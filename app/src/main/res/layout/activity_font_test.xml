@@ -9,7 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".FontTestActivity">
 
-    <com.futurice.fontloader.TextView
+    <net.kianoni.fontloader.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
@@ -17,7 +17,7 @@
         android:textSize="18sp"
         />
 
-    <com.futurice.fontloader.TextView
+    <net.kianoni.fontloader.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
@@ -27,14 +27,14 @@
         android:textSize="18sp"
         />
 
-    <com.futurice.fontloader.TextView
+    <net.kianoni.fontloader.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
         style="@style/OpenSans"
         />
 
-    <com.futurice.fontloader.TextView
+    <net.kianoni.fontloader.TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
