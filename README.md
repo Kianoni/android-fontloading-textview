@@ -37,7 +37,7 @@ Or a pattern, family and variant:
 
 Example:
 
-    <resources xmlns:font="http://schemas.android.com/res/com.elisa.wallet">
+    <resources xmlns:font="http://schemas.android.com/res/com.futurice.fontloader">
 
         <!-- Base application theme. -->
         <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
