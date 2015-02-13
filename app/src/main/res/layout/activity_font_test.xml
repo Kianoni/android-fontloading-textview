@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
         font:fontFile="fonts/OpenSans-Regular.ttf"
-        android:textSize="28dp"
+        android:textSize="18sp"
         />
 
     <com.futurice.fontloader.TextView
@@ -24,7 +24,7 @@
         font:fontFilePattern="fonts/{fontFamily}-{fontVariant}.ttf"
         font:fontFamily="OpenSans"
         font:fontVariant="Light"
-        android:textSize="28dp"
+        android:textSize="18sp"
         />
 
     <com.futurice.fontloader.TextView
@@ -32,7 +32,6 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
         style="@style/OpenSans"
-        android:textSize="28dp"
         />
 
     <com.futurice.fontloader.TextView
@@ -40,7 +39,6 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_world"
         style="@style/OpenSans.Bold"
-        android:textSize="28dp"
         />
 
 </LinearLayout>

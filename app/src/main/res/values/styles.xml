@@ -9,6 +9,7 @@
         <item name="fontFilePattern">fonts/{fontFamily}-{fontVariant}.ttf</item>
         <item name="fontFamily">OpenSans</item>
         <item name="fontVariant">Regular</item>
+        <item name="android:textSize">18sp</item>
     </style>
 
     <style name="OpenSans.Bold" parent="OpenSans">
