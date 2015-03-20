@@ -1,5 +1,6 @@
 # android-fontloading-textview
-Helper for using custom fonts in styles
+Load custom fonts easily just via layout parameters or styles. Uses static Typeface objects, load once - memory efficient.
+No more textView.setTypeface() calls!
 
 ## Add gradle dependency
     compile 'net.kianoni:fontloader:0.3.0'
