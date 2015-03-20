@@ -1,6 +1,9 @@
 # android-fontloading-textview
 Helper for using custom fonts in styles
 
+## Add gradle dependency
+    compile 'net.kianoni:fontloader:0.3.0'
+
 ## Usage in layouts
 Please use styles.xml instead!
 

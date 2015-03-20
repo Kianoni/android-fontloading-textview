@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.bmuschko.nexus'
 
 android {
     compileSdkVersion 21
@@ -18,7 +19,55 @@ android {
     }
 }
 
-dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:21.0.3'
+group = "net.kianoni"
+version = "0.3.0"
+
+task androidJavadocs(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+}
+
+task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {
+    classifier = 'javadoc'
+    from androidJavadocs.destinationDir
+}
+
+task androidSourcesJar(type: Jar) {
+    classifier = 'sources'
+    from android.sourceSets.main.java.srcDirs
+}
+
+artifacts {
+    archives androidSourcesJar
+    archives androidJavadocsJar
+}
+
+modifyPom {
+    project {
+        name 'Android Font Loading Textview'
+        description 'Helper for using custom fonts in styles'
+        url 'https://github.com/Kianoni/android-fontloading-textview'
+
+        scm {
+            url 'https://github.com/Kianoni/android-fontloading-textview'
+            connection 'scm:https://github.com/Kianoni/android-fontloading-textview.git'
+            developerConnection 'scm:https://github.com/Kianoni/android-fontloading-textview.git'
+        }
+
+        licenses {
+            license {
+                name 'The MIT License (MIT)'
+                url 'http://opensource.org/licenses/MIT'
+                distribution 'repo'
+            }
+        }
+
+        developers {
+            developer {
+                id 'kianoni'
+                name 'Kimmo Ilppola'
+                email 'kimmo.ilppola@futurice.com'
+            }
+        }
+    }
 }
