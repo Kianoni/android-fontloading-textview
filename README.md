@@ -2,6 +2,8 @@
 Load custom fonts easily just via layout parameters or styles. Uses static Typeface objects, load once - memory efficient.
 No more textView.setTypeface() calls!
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-android--fontloading--textview-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/1659)
+
 ## Add gradle dependency
     compile 'net.kianoni:fontloader:0.3.0'
 
