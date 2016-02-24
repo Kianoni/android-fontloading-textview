@@ -16,4 +16,8 @@
         <item name="fontVariant">Bold</item>
     </style>
 
+    <style name="OpenSans.Italic" parent="OpenSans">
+        <item name="fontVariant">Italic</item>
+    </style>
+
 </resources>
